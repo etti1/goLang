@@ -96,7 +96,7 @@ func main() {
 
 	u := User{}
 	go printUsername(&u, &wg)
-	// Регистрация нового пользователя
+
 	e.POST("/register", register)
 
 	e.POST("/login", login)
